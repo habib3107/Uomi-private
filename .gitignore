@@ -1,0 +1,47 @@
+# Secrets and local settings: never commit these
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Node
+node_modules/
+
+# Local databases
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Signing keys: never commit these
+*.keystore
+*.jks
+*.p12
+*.p8
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build output (release APK lands in dist/)
+dist/
+
+# Local tool folders (not part of the app)
+.claude/
+.superpowers/
+.impeccable/
